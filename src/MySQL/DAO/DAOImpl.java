@@ -33,7 +33,7 @@ public class DAOImpl implements MysqlDAO {
 		String sql = null;
 		if(null != statement && null != entity)
 		try {
-			sql = entity.insertExpression();
+			sql = entity.inserStatement();
 			if(null == sql)
 				return false;
 			if(statement.execute(sql))

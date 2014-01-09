@@ -10,7 +10,7 @@ public abstract class MySQLEntity {
 		super();
 		this.tablename = tablename;
 	}
-	public String insertExpression(){
+	public String inserStatement(){
 		Class<?> c = this.getClass();
 		if(null == tablename)
 			return null;
